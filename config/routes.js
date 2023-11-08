@@ -1,16 +1,16 @@
 const controllers = require('../app/controllers');
 const express = require('express');
 const router = require('express').Router();
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../docs/swagger.json');
+// const swaggerUi = require('swagger-ui-express');
+// const swaggerDocument = require('../docs/swagger.json');
 const middlewares = require('../app/middlewares');
 
 const appRouter = express.Router();
 const apiRouter = express.Router();
 
 // open api document
-router.use('/document', swaggerUi.serve);
-router.get('/document', swaggerUi.setup(swaggerDocument));
+// router.use('/document', swaggerUi.serve);
+// router.get('/document', swaggerUi.setup(swaggerDocument));
 
 // User router
 router.post(
