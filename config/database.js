@@ -38,7 +38,7 @@ module.exports = {
     },
   },
   production: {
-    use_env_variable: "DATABASE_URL",
+    use_env_variable: "CYCLIC_DB",
     dialect: "postgres",
     protocol: "postgres",
     ssl: true,
